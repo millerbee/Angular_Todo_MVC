@@ -1,6 +1,6 @@
 
 Test cases and test run for TodoMVC 
 
-this is ran from the CLI and needs Selenium 
+this is ran from the CLI and needs Selenium and...
 
 further steps pending...
