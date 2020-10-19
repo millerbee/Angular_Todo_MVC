@@ -1,0 +1,44 @@
+code bugs:
+
+Error with protractor syncing with Angular2 - 'Could not find testability for element'
+when intializing the test file, this error displayed immediatly.
+after research it was found to add these items to spec.js file:
+    
+    ignoreSynchronization = true;
+    browser.waitForAngular();
+    browser.driver.sleep(1000);
+
+
+and the tests were able to complete.  any one of the three not added resulted in the same sync error.
+
+
+
+syntax error on sendKeys - initially was 'sendyKeys'
+removed the first 'y'
+code ran.
+
+
+
+failure to find element 'by.id'...
+changed to 'by.css'
+bug fixed.
+
+failure to find element for clearTodo and Delete- intially set to 'clear-completed' and 'destroy'
+changed to 'button.clear-completed' and 'button.destroy'
+bug fixed.
+
+
+
+outstanding bug:
+Fields on TodoMVC are not being populated with expected data.
+Example code requires input of 'CaMElcaSe'
+
+Actual output is 'CaElSe'
+
+intital research and suggested attempts failed.
+
+This is still in troubleshooting stage.
+
+this bug does not affect the app as the conditions were met.
+
+

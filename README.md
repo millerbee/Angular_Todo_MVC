@@ -1,1 +1,2 @@
-# Angular_Todo_MVC
+# SlamJSTodoMVC
+Test cases and test run for TodoMVC 

@@ -1,0 +1,46 @@
+Test Cases:
+
+
+verify you can:
+ - add task
+ - edit task
+ - delete task
+ - complete task
+ - field is camel case
+ - field is alphanumeric
+ - field allows special char
+ - field requires min length of one char
+
+
+-add task
+ Action: input new task
+ Expected: new task created
+ 
+
+-edit task
+ Action: edit a current task
+ Expected:task is updated with new input
+
+-delete task
+ Action: select a task and delete
+ Expected  task is deleted
+ 
+-complete task
+ Action: mark task and select complete
+ Expected: task shows as completed.
+ 
+-field is camel case
+ Action: input 'CaMElcaSe'
+ Expected:'CaMElcaSe'
+ 
+-field is alphanumeric
+ Action: input 'Add66'
+ Expected:'Add66'
+ 
+-field allows special chars
+ Action: input 'Fun!
+ Expected: 'Fun!
+ 
+ -field requires min of 1 char to create a task
+  Action: input 'A'
+  Expected: 'A'
